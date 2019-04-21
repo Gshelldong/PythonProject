@@ -1,0 +1,21 @@
+<School>
+   <Teacher desc="PythonTeacher" score="good">
+       <Name>LiuDana</Name>
+       <Age_1 Detail="Age for year 2010">18</Age_1>
+       <Mobile>13260446055</Mobile>
+   </Teacher>
+
+    <Student>
+        <Name Other="&#20182;&#26159;&#29677;&#38271;" test="ZhangSanZhangSan">ZhangSan</Name>
+        <Age Detail="The yongest boy in class">14</Age>
+        <Adder a="b">&#25105;&#21152;&#30340;</Adder>
+    <Adder a="b">&#25105;&#21152;&#30340;</Adder></Student>
+
+    <Student>
+        <Name test="LiSiLiSi">LiSi</Name>
+        <Age>19</Age>
+        <Mobile>15578875040</Mobile>
+    </Student>
+   
+
+</School>
