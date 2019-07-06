@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>颜色的表示方式</title>
+    <style>
+        .item1,.item2,.item3,.item4{
+            width:200px;
+            height:200px;
+        }
+        .item1{
+            background-color: rgb(0,56,200);
+        }
+        .item2{
+            background-color: limegreen;
+        }
+        .item3{
+            background-color: #ff0;
+        }
+        .item4{
+            background-color: rgba(0,0,0,0.5);
+        }
+
+    </style>
+</head>
+<body>
+<div class="item1"></div>
+<p>使用rgb来表示div块的颜色，格式background-color：RGB(X,X,X);X的取值范围为0-255。</p>
+<div class="item2"></div>
+<p>使用单词来表示div块的颜色，格式background-color：颜色单词。</p>
+<div class="item3"></div>
+<p>使用rgba来表示div块的颜色，格式background-color：RGBA(X,X,X,Y);X的取值范围为0-255,Y的取值范围是0-1之间的小数。</p>
+<div class="item4"></div>
+<p>使用十六进制来表示div块的颜色，格式background-color:# ；0-9，A-F之间的任意六个字符。</p>
+</body>
+</html>

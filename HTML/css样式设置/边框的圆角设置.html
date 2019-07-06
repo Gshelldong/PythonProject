@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>边框的圆角设置</title>
+        <style>
+            .box{
+                width:200px;
+                height:200px;
+                border: skyblue 2px solid;
+                /*border-radius: 10%;*/
+                border-radius: 10px 20px 30px 40px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="box"></div>
+    <p>说明:如果是border-radius：百分比指的是每个角圆的半径所占矩形的百分比。<br>
+    如果后面跟的是四个像素单位表示的是半径的长度，从左上角开始顺时针方向应用。<br>
+    如果后面只跟了两个像素单位则表示的是对角是这样。</p>
+    </body>
+</html>
