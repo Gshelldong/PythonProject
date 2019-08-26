@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>权重、标签</title>
+    <style type="text/css">
+        a{
+            text-decoration: none;
+        }
+        img{
+            display: none;
+        }
+        a:hover ~ .n1{ /*~ 表示匹配选择器 ；+ 表示相邻选择器 */
+            display: block;
+        }
+        a:hover ~ .y1{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <a  class="m1" href="#">杨幂</a>
+    <a class="x1" href="#">王智</a>
+
+    <img class="n1" src="./images/yangmi.jpg">
+    <img class="y1" src="./images/wang.jpg">
+
+</body>
+</html>

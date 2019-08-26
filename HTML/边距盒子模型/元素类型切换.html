@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素类型切换</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            /*display: inline;*/
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+        }
+        .box1{
+        background: red;
+        }
+        .box2{
+            background: green;
+        }
+        .box3{
+            background: blue;
+        }
+        span{
+            width:100px;
+            height:100px;
+            background: pink;
+            /*display: block;*/
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box3">4</div><br>
+disply属性是用来设置元素的类型即隐藏的，常用的属性有：<br>
+    <span>1、none 隐藏元素的且不占位置。</span>
+    <span>2、block 元素以块元素显示。</span>
+    <span>3、inline 元素以内联元素显示。</span>
+    <span>4、inline-block 元素以内联块元素显示。</span>
+    <p>disply：inline 把元素以行级元素显示。</p>
+    <p>disply：inline-block 把元素以行块级元素显示。</p>
+</body>
+</html>

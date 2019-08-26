@@ -1,0 +1,47 @@
+*{margin: 0;padding:0;}
+
+.navagationbar{
+    width:100%;
+    height:50px;
+    /*background: green;*/
+}
+.i-line{
+    float: left;
+    display: inline-block;
+    margin-top: 13px;
+}
+.navagationbar ul{
+    list-style: none;
+    float: right;
+    display: inline-block;
+    margin-right:20% ;
+}
+.navagationbar ul li{
+    float: left;
+    display: block;
+    /*background: yellow;*/
+    /*width:30px;*/
+    height:46px;
+    line-height: 46px;
+    /*border-bottom: sandybrown solid 4px;*/
+    margin: 0 8px;
+}
+.navagationbar ul li:hover a{
+    border-bottom: sandybrown solid 4px;
+    color:sandybrown;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.banner{
+    width: 100%;
+}
+.selectspring{
+    float: left;
+    position: relative;
+    top:0px;
+    left:20%;
+}
+@media (max-width: 960px) {
+}

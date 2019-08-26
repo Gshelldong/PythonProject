@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>函数的定义方法</title>
+</head>
+<body>
+    <script >
+        /*function demo() {
+          alert("函数被调用了！")
+        }
+        demo()
+        var demo1=function() {
+          alert("函数被调用了！");
+        }
+        console.log(demo1()) //匿名函数的调用。*/
+        var a=10;var b =20;
+        function demo(a,b) {
+          console.log(a,b)
+          for(i in arguments){
+              console.log(arguments[i])
+          }
+        }
+        demo(a,b,30)
+    </script>
+</body>
+</html>

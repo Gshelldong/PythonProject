@@ -48,7 +48,7 @@ class RandomBall():
         y1 = self.ypos - self.radius
 
         x2 = self.xpos + self.radius
-        y2 = self.xpos + self.radius
+        y2 = self.ypos + self.radius
         self.item = self.canvas.create_oval(x1, y1, x2, y2, fill=self.color, outline=self.color)
 
     def move_ball(self):

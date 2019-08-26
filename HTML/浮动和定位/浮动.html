@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+</head>
+    <style>
+        .wrap{
+            width:700px;
+            border:1px solid red;
+            overflow: hidden;
+        }
+        .box1{
+            width:200px;
+            background: red;
+            float: left;
+        }
+        .box2{
+            width: 200px;
+            background: skyblue;
+            float: left;
+        }
+        .box3{
+            width:200px;
+            background: blue;
+            float: left;
+        }
+        .box4{
+            width:200px;
+            background: yellow;
+            float: left;
+        }
+        .item1{
+            width:200px;
+            height:100px;
+            background: #cccccc;
+            float: left;
+        }
+        .item2{
+            width:200px;
+            height:100px;
+            background: pink;
+            float:left;
+        }
+        .item3{
+            width:200px;
+            height: 100px;
+            background: black;
+            float:left;
+        }
+        .item4{
+            width:200px;
+            height:100px;
+            background:darkkhaki;
+            float:left;
+        }
+
+    </style>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div><br>
+
+    <div class="wrap">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+    </div>
+    <p>1、浮动标签，float:left 、right浮动后元素会脱离文档流，后面不浮动的元素绘制占据原来的位置。<br>
+        2、停止浮动:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;a.碰到父元素的边界会停止。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;b.碰到前面有浮动的元素会跟在后面。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;c.碰到没有浮动的元素。<br>
+        3、浮动元素会把元素转换为内行块元素。<br>
+        4、当父元素没有设置高度的时候，子元素浮动父元素就不会被撑开，这个时候需要在夫元素里面添加 overflow：hidden；<br>
+        5、父级元素的宽度不够时，浮动元素会自动换行。
+    </p>
+</body>
+</html>
