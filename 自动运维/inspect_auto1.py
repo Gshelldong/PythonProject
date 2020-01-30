@@ -1,40 +1,21 @@
-import paramiko
-import sys
-import os
-import socket
-import select
-import getpass
-from paramiko.py3compat import u
+# #coding = utf-8
+import re
+a =  ['主机名:hadoop-master11|', '内存:77%|', 'CPU使用率:2.52%|', '存储:3%|', 'hadoop进程正常(巡检关键字:hadoop)|',
+'主机名:hadoop-master12|' ,'内存:58%|', 'CPU使用率:10.86%|', '存储:3%|', 'hadoop进程正常(巡检关键字:hadoop)|']
+for i in a :
+    pattern = r"主机名"
+    m = re.search(pattern, i)
+    if m != None:
+        with open('test.txt','a') as f:
+            f.write('\n'+i)
+    with open('test.txt', 'a') as f:
+        f.write(i)
 
-tran = paramiko.Transport(('192.168.10.10', 22,))
-tran.start_client()
-tran.auth_password('root', '126.com')
+# result_list_info=[]
+# back_info = 'hadoop-salver5'
+# result_list_info.append("主机名:" + back_info + "| ")
+# print(result_list_info)
 
-# 打开一个通道
-chan = tran.open_session()
-# 获取一个终端
-chan.get_pty()
-# 激活器
-chan.invoke_shell()
-
-while True:
-    # 监视用户输入和服务器返回数据
-    # sys.stdin 处理用户输入
-    # chan 是之前创建的通道，用于接收服务器返回信息
-    readable, writeable, error = select.select([chan, sys.stdin, ], [], [], 1)
-    if chan in readable:
-        try:
-            x = u(chan.recv(1024))
-            if len(x) == 0:
-                print('\r\n*** EOF\r\n')
-                break
-            sys.stdout.write(x)
-            sys.stdout.flush()
-        except socket.timeout:
-            pass
-    if sys.stdin in readable:
-        inp = sys.stdin.readline()
-        chan.sendall(inp)
-
-chan.close()
-tran.close()
+# fond_kwords_hadoop = re.compile(r"hadoop")
+# fond_kwords = fond_kwords_hadoop.search('hadoop-slaver501')
+# fond_kwords.group()
