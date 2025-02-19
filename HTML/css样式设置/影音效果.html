@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阴影效果</title>
+    <style>
+        .box{
+            width:200px;
+            height:200px;
+            background-color:skyblue;
+            /*box-shadow: -10px 10px 0px 10px #ccc;*/
+        }
+        .box:hover{
+            box-shadow: -10px 10px 10px 10px #ccc;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p>第一个值表示的是水平方向阴影的偏移。<br>
+    第二个表示的是垂直方向的偏移。<br>
+    第三个表示的模糊程度。<br>
+    第四个表示的是扩散范围。<br>
+    第五个值表示的是阴影颜色。<br>
+    第六个表示的是是否为内阴影。inset</p>
+</body>
+</html>

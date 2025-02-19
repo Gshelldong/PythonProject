@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框属性</title>
+    <style>
+        .item,.item1,.item2,.item3{
+            width:200px;
+            height:200px;
+        }
+        .item{
+            border: yellow 2px solid;
+        }
+        .item1{
+            border: 2px dotted red;
+        }
+        .item2{
+            border: 2px dashed red;
+        }
+        .item3{
+            border-left: 2px solid red;
+            border-bottom: 2px dashed black;
+            border-right: 2px dotted blue;
+            border-top:skyblue 2px dotted ;
+        }
+    </style>
+</head>
+<body>
+    <div class="item"></div>
+    <p>线条样式为 solid。 </p>
+    <div class="item1"></div>
+    <p>线条样式为 dotted。</p>
+    <div class="item2"></div>
+    <p>线条样式为 dashed。</p>
+    <div class="item3"></div>
+    <p>单独设置每一条边框的样式:<br>
+        border-top上面边框。<br>border-bottom下面边框<br>
+        border-left左侧边框。<br>border-right右侧边框。
+    </p>
+</body>
+</html>

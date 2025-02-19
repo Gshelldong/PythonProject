@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>元素对象获取</title>
+</head>
+<body>
+    <script>
+        window.onload=function () {
+          /*  var oDiv=document.getElementById('item1');
+            //console.log(oDiv)
+        //js通过对style属性来给元素设置样式 样式是加杂行间的js样优先。
+        oDiv.style.width="200px";
+        oDiv.style.height="200px";
+        oDiv.style.background="red";
+        console.log(oDiv.style.width) //获取元素属性
+        //操作元素内容
+        //oDiv.innerText="<h1>123</h1>"
+        oDiv.innerHTML="<h3>123</h3>"*/
+
+        //表单值的操作
+         var v1=document.getElementById('uname');
+        console.log(v1);
+        console.log(v1.value)
+        v1.value="777"
+        }
+    </script>
+    <div id="item1">123</div>
+    <input type="text" value="123" name="username" id="uname">
+</body>
+</html>

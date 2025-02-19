@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>定时器</title>
+</head>
+<body>
+    <script >
+        function demo() {
+          console.log("定时器执行了")
+        }
+        /*setTimeout(demo,3000) //单次计时器，设置3000ms之后执行。*/
+        var i =0;
+        var set=setInterval(function() {
+          console.log("定时器已经启动了");
+          i++;
+          console.log(i);
+        },1000)
+        console.log(set);
+        setTimeout(function(){clearInterval(set) ;console.log('定时器清除了')},6000)
+
+    </script>
+</body>
+</html>

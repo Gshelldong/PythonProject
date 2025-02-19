@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS的外间距</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            border:10px solid yellow;
+        }
+        .item1{
+            background: red;
+        }
+        .item2 {
+            background: green;
+            /*margin-top: 10px;*/
+            /*margin-left: 20px;*/
+            /*margin-bottom: 30px;*/
+            /*margin-right: 100px;*/
+            /*margin: 10px;*/
+            /*margin: 10px 30px;*/
+            /*margin: 0 auto;*/
+            margin-top: -10px;
+            box-sizing: border-box;
+        }
+        .item3{
+            background: blue;
+            margin-top:-10px ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+    <ul>
+        <li>margin: 只有一个参数表示只有四周的距离，单位：px。</li>
+        <li>margin: 两个参数，第一个表示上方和下方，第二个表示右做左。</li>
+        <li>maigin-top、margin-bottom、margin-right、margin-left表示上下右左。</li>
+        <li>margin: 0 auto; 居中。</li>
+        <li>argin: 为负 px可以用来合并元素。</li>
+        <li>box-sizing: borde-box 在不改变原来的大小下加边框。</li>
+    </ul>
+</body>
+</html>

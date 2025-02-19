@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>动画</title>
+  <style>
+    #item1{
+    height:40px;
+    /*background: #00CD66;*/
+    }
+  </style>
+</head>
+<body>
+    <div id="item1"></div>
+    <script >
+        var oDiv=document.getElementById("item1")
+        var i=0;
+        var set=setInterval(function() {
+          i+=10;
+          oDiv.style.width=i+'px';
+          var color=Math.floor(Math.random()*1000000)
+          oDiv.style.background="#"+color;
+          if(i==1000){
+              clearInterval(set);
+          }
+        },40);
+
+    </script>
+</body>
+</html>

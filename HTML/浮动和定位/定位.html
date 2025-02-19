@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style>
+        *{margin:0;padding:0;}
+        .box1{
+            width:200px;
+            height:200px;
+            background: green;
+            position: relative;
+            left:100px;
+            top:50px;
+        }
+        .wrap{
+            width:500px;
+            height:500px;
+            margin: 0 100px;
+            border: 1px solid blue;
+            position: relative;
+            top: 0px;
+            left:0px;
+        }
+        .box2{
+            width:200px;
+            height:200px;
+            background: red;
+            position: absolute;
+            left:100px;
+            top:50px;
+            z-index: 1;
+        }
+        .box3{
+            width:200px;
+            height:200px;
+            background: yellow;
+            line-height: 200px;
+            text-align: center;
+            position: relative;
+            top:80px;
+            left: 120px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="wrap">
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+    <p>&nbsp;&nbsp;&nbsp;相对位置，指自己本身初始的位置，position:relative 并设置相应top 和 left。<br>
+        &nbsp;&nbsp;&nbsp;绝对位置，相对于父元素的位置，需要父元素已经有位置参数，如果对应元素父元素没有位置属性，则会继续向上一级查找。<br>
+    </p>
+</body>
+</html>

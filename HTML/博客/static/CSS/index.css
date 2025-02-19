@@ -1,0 +1,84 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/*头部*/
+.head{
+    width:80%;
+    height:60px;
+    background: green;
+    margin: 0 auto;
+    margin-top:10px;
+}
+.head ul li{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    margin:0 18px;
+}
+/*中间*/
+.middle{
+    width:80%;
+    height:900px;
+    border:solid 3px #00FF7F;
+    margin: 0 auto;
+}
+/*内容*/
+.content{
+    width:70%;
+    height:900px;
+    background: #00CD66;
+    float: left;
+    overflow: scroll;
+}
+.content ul li{
+    list-style: none;
+    font-size: 18px;
+    margin: 10px 25px;
+    color: white;
+}
+
+/*菜单栏*/
+.auther{
+    float: right;
+    width:29%;
+    height:290px;
+    background: #32CD32;
+    color:white;
+    line-height: 40px;
+    font-size: 18px;
+}
+.cla{
+    float: right;
+    width:29%;
+    height:290px;
+    background: #00CDCD;
+}
+.cla ul{
+    /*list-style: none;*/
+    font-size: 30px;
+    color: white;
+}
+.cla ul li{
+    margin: 25px 40px;
+}
+.arti{
+    float: right;
+    width:29%;
+    height:290px;
+    background: #66CDAA;
+}
+.arti ul li{
+    margin: 10px 25px;
+    font-size: 20px;
+}
+/*底部*/
+.bottom{
+    width:80%;
+    height:220px;
+    background: green;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
